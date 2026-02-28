@@ -4,7 +4,7 @@ import CarProblems from '@/components/sections/CarProblems'
 import HowItWorks from '@/components/sections/HowItWorks'
 import LocationContact from '@/components/sections/LocationContact'
 import OurServiceSlider from '@/components/sections/OurServiceSlider'
-import OurTeams from '@/components/sections/OurTeams'
+// import OurTeams from '@/components/sections/OurTeams'
 import PopularServices from '@/components/sections/PopularServices'
 
 import Header from '../components/layout/Header'
@@ -21,7 +21,7 @@ function App() {
 				<PopularServices />
 				<CarProblems />
 				<HowItWorks />
-				<OurTeams />
+				{/* <OurTeams /> */}
 				<OurServiceSlider />
 				<BrandsMarquee />
 				<LocationContact />
