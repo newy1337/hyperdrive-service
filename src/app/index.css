@@ -1,0 +1,97 @@
+@import 'tailwindcss';
+@import 'swiper/css';
+@import 'swiper/css/effect-fade';
+@import 'swiper/css/pagination';
+
+@font-face {
+	font-family: 'RaceSport';
+	src: url('../assets/fonts/RaceSport.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@theme {
+	--color-primary: #f6d413;
+	--color-secondary: #a6a6a6;
+	--color-background: #1f1f1f;
+	--color-border: #a6a6a6;
+
+	--color-black: #000000;
+	--color-white: #ffffff;
+
+	--font-heading: 'RaceSport', sans-serif;
+	--font-body: 'Inter', sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	@apply bg-background text-xl text-white;
+	font-family: var(--font-body);
+}
+
+.font-heading {
+	font-family: var(--font-heading);
+}
+
+.font-unbounded {
+	font-family: 'Unbounded', cursive;
+}
+
+.our-service-pagination .swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	opacity: 1;
+	background: rgba(255, 255, 255, 0.28);
+	border-radius: 999px;
+	margin: 0 !important;
+}
+
+.our-service-pagination .swiper-pagination-bullet-active {
+	background: var(--color-primary);
+}
+
+@keyframes marquee-x {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
+
+.marquee-track {
+	display: flex;
+	width: max-content;
+	will-change: transform;
+	animation: marquee-x 60s linear infinite;
+}
+
+.marquee-row {
+	display: flex;
+	align-items: center;
+	@apply gap-12 pr-12 lg:gap-16 lg:pr-16;
+}
+
+.marquee-logo {
+	width: auto;
+	opacity: 0.95;
+	user-select: none;
+	-webkit-user-drag: none;
+
+	@apply h-28 lg:h-37;
+}
+
+.marquee-track:hover {
+	animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.marquee-track {
+		animation: none;
+	}
+}
