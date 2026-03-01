@@ -6,7 +6,7 @@ export default function Footer() {
 	const { t } = useI18n()
 
 	return (
-		<footer className='bg-background py-22.5'>
+		<footer className='bg-background py-22.5 lg:pb-17.5'>
 			<Container>
 				<div className='flex flex-col items-center gap-6 text-center'>
 					<img src='/logo.webp' alt='Hyper Drive Logo' className='max-w-30' />
