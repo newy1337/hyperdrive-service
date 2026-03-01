@@ -1,9 +1,11 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 
 import Modal from '@/components/ui/Modal'
 import TextField from '@/components/ui/TextField'
 
 import { useI18n } from '@/i18n/I18nContext'
+
+import DropdownField from '../ui/DropdownField'
 
 type Props = {
 	open: boolean
@@ -64,6 +66,18 @@ export default function BookingModal({ open, onClose }: Props) {
 		resetForm()
 		onClose()
 	}
+
+	const worksOptions = useMemo(
+		() => [
+			{ value: 'diagnostics', label: t.booking.worksOptions.diagnostics },
+			{ value: 'maintenance', label: t.booking.worksOptions.maintenance },
+			{ value: 'brakes', label: t.booking.worksOptions.brakes },
+			{ value: 'suspension', label: t.booking.worksOptions.suspension },
+			{ value: 'custom', label: t.booking.worksOptions.custom }
+		],
+		[t]
+	)
+
 	return (
 		<Modal open={open} onClose={handleClose} title={t.booking.title}>
 			<button
@@ -72,7 +86,14 @@ export default function BookingModal({ open, onClose }: Props) {
 				aria-label='Close'
 				className='absolute top-4 right-4 grid cursor-pointer place-items-center transition lg:top-5 lg:right-5'
 			>
-				<svg xmlns='http://www.w3.org/2000/svg' className='size-8 lg:size-12' width='48' height='48' viewBox='0 0 48 48' fill='none'>
+				<svg
+					xmlns='http://www.w3.org/2000/svg'
+					className='size-8 lg:size-12'
+					width='48'
+					height='48'
+					viewBox='0 0 48 48'
+					fill='none'
+				>
 					<path
 						d='M29.088 24L37.56 32.472L32.472 37.56L24 29.088L15.504 37.584L10.416 32.496L18.912 24L10.416 15.504L15.504 10.416L24 18.912L32.496 10.44L37.584 15.528L29.088 24Z'
 						fill='white'
@@ -101,7 +122,7 @@ export default function BookingModal({ open, onClose }: Props) {
 				</div>
 
 				<TextField placeholder={t.booking.auto} value={auto} onChange={setAuto} />
-				<TextField placeholder={t.booking.works} value={works} onChange={setWorks} />
+				<DropdownField placeholder={t.booking.works} value={works} onChange={setWorks} options={worksOptions} />
 
 				<button
 					type='submit'

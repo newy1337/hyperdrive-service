@@ -178,6 +178,14 @@ export default {
 		works: 'Type of works',
 		send: 'Send',
 
+		worksOptions: {
+			diagnostics: 'Diagnostics',
+			maintenance: 'Maintenance',
+			brakes: 'Brake Service',
+			suspension: 'Suspension',
+			custom: 'Custom Work'
+		},
+
 		errors: {
 			nameRequired: 'Name is required',
 			surnameRequired: 'Surname is required',

@@ -178,6 +178,14 @@ export default {
 		works: 'Тип робіт',
 		send: 'Відправити',
 
+		worksOptions: {
+			diagnostics: 'Діагностика',
+			maintenance: 'Технічне обслуговування',
+			brakes: 'Гальмівна система',
+			suspension: 'Підвіска',
+			custom: 'Індивідуальні роботи'
+		},
+
 		errors: {
 			nameRequired: "Ім'я обов'язкове",
 			surnameRequired: "Прізвище обов'язкове",

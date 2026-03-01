@@ -30,6 +30,9 @@ if (import.meta.hot) {
 	})
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+;(window as any).__lenis = lenis
+
 createRoot(document.getElementById('root')!).render(
 	<StrictMode>
 		<I18nProvider>
