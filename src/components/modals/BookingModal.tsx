@@ -7,16 +7,10 @@ import { useI18n } from '@/i18n/I18nContext'
 
 import DropdownField from '../ui/DropdownField'
 
-type Props = {
-	open: boolean
-	onClose: () => void
-}
+type Props = { open: boolean; onClose: () => void }
 
-type Errors = {
-	name?: string
-	surname?: string
-	phone?: string
-}
+type Errors = { name?: string; surname?: string; phone?: string; works?: string }
+type Touched = { name?: boolean; surname?: boolean; phone?: boolean; works?: boolean }
 
 export default function BookingModal({ open, onClose }: Props) {
 	const { t } = useI18n()
@@ -28,6 +22,8 @@ export default function BookingModal({ open, onClose }: Props) {
 	const [works, setWorks] = useState('')
 
 	const [errors, setErrors] = useState<Errors>({})
+	const [touched, setTouched] = useState<Touched>({})
+	const [submitted, setSubmitted] = useState(false)
 
 	const resetForm = () => {
 		setName('')
@@ -36,27 +32,72 @@ export default function BookingModal({ open, onClose }: Props) {
 		setAuto('')
 		setWorks('')
 		setErrors({})
+		setTouched({})
+		setSubmitted(false)
 	}
 
-	const validate = (): boolean => {
-		const newErrors: Errors = {}
+	const validateField = (field: keyof Errors, value: string): string | undefined => {
+		const v = value.trim()
 
-		if (!name.trim()) newErrors.name = t.booking.errors.nameRequired
-		if (!surname.trim()) newErrors.surname = t.booking.errors.surnameRequired
+		if (field === 'name') return v ? undefined : t.booking.errors.nameRequired
+		if (field === 'surname') return v ? undefined : t.booking.errors.surnameRequired
 
-		if (!phone.trim()) {
-			newErrors.phone = t.booking.errors.phoneRequired
-		} else if (!/^\+?[0-9\s\-()]{7,}$/.test(phone)) {
-			newErrors.phone = t.booking.errors.phoneInvalid
+		if (field === 'phone') {
+			if (!v) return t.booking.errors.phoneRequired
+			if (!/^\+?[0-9\s\-()]{7,}$/.test(v)) return t.booking.errors.phoneInvalid
+			return undefined
 		}
 
-		setErrors(newErrors)
-		return Object.keys(newErrors).length === 0
+		if (field === 'works') {
+			// если works обязателен — раскомментируй:
+			// return v ? undefined : t.booking.errors.worksRequired
+			return undefined
+		}
+
+		return undefined
+	}
+
+	const validateAll = (): boolean => {
+		const next: Errors = {
+			name: validateField('name', name),
+			surname: validateField('surname', surname),
+			phone: validateField('phone', phone),
+			works: validateField('works', works)
+		}
+
+		Object.keys(next).forEach(k => {
+			const key = k as keyof Errors
+			if (!next[key]) delete next[key]
+		})
+
+		setErrors(next)
+		return Object.keys(next).length === 0
+	}
+
+	const showError = (field: keyof Errors) => {
+		return (submitted || touched[field]) && !!errors[field]
+	}
+
+	const updateField = (field: keyof Errors, setter: (v: string) => void) => (val: string) => {
+		setter(val)
+
+		if (submitted || touched[field]) {
+			const msg = validateField(field, val)
+			setErrors(prev => {
+				const next = { ...prev }
+				if (msg) next[field] = msg
+				else delete next[field]
+				return next
+			})
+		}
 	}
 
 	const onSubmit = (e: React.FormEvent) => {
 		e.preventDefault()
-		if (!validate()) return
+		setSubmitted(true)
+
+		if (!validateAll()) return
+
 		console.log({ name, surname, phone, auto, works })
 		resetForm()
 		onClose()
@@ -107,26 +148,51 @@ export default function BookingModal({ open, onClose }: Props) {
 
 			<form onSubmit={onSubmit} className='mx-auto w-[min(496px,100%)] space-y-6'>
 				<div>
-					<TextField placeholder={t.booking.name} value={name} onChange={setName} />
-					{errors.name && <p className='mt-1 text-sm text-red-500'>{errors.name}</p>}
+					<TextField
+						placeholder={t.booking.name}
+						value={name}
+						onChange={updateField('name', setName)}
+						onBlur={() => setTouched(v => ({ ...v, name: true }))}
+					/>
+					{showError('name') && <p className='mt-1 text-sm text-red-500'>{errors.name}</p>}
 				</div>
 
 				<div>
-					<TextField placeholder={t.booking.surname} value={surname} onChange={setSurname} />
-					{errors.surname && <p className='mt-1 text-sm text-red-500'>{errors.surname}</p>}
+					<TextField
+						placeholder={t.booking.surname}
+						value={surname}
+						onChange={updateField('surname', setSurname)}
+						onBlur={() => setTouched(v => ({ ...v, surname: true }))}
+					/>
+					{showError('surname') && <p className='mt-1 text-sm text-red-500'>{errors.surname}</p>}
 				</div>
 
 				<div>
-					<TextField placeholder={t.booking.phone} value={phone} onChange={setPhone} />
-					{errors.phone && <p className='mt-1 text-sm text-red-500'>{errors.phone}</p>}
+					<TextField
+						placeholder={t.booking.phone}
+						value={phone}
+						onChange={updateField('phone', setPhone)}
+						onBlur={() => setTouched(v => ({ ...v, phone: true }))}
+					/>
+					{showError('phone') && <p className='mt-1 text-sm text-red-500'>{errors.phone}</p>}
 				</div>
 
 				<TextField placeholder={t.booking.auto} value={auto} onChange={setAuto} />
-				<DropdownField placeholder={t.booking.works} value={works} onChange={setWorks} options={worksOptions} />
+
+				<div>
+					<DropdownField
+						placeholder={t.booking.works}
+						value={works}
+						onChange={updateField('works', setWorks)}
+						options={worksOptions}
+						// onBlur={() => setTouched(v => ({ ...v, works: true }))}
+					/>
+					{showError('works') && <p className='mt-1 text-sm text-red-500'>{errors.works}</p>}
+				</div>
 
 				<button
 					type='submit'
-					className='bg-primary flex min-h-14.5 w-full cursor-pointer items-center justify-center gap-2.5 p-3 font-bold text-black uppercase duration-300 not-disabled:hover:shadow-[0_4px_20.7px_0px_#F6D413F7] disabled:cursor-not-allowed disabled:opacity-50'
+					className='bg-primary flex min-h-14.5 w-full items-center justify-center p-3 font-bold text-black uppercase duration-300 not-disabled:hover:shadow-[0_4px_20.7px_0px_#F6D413F7]'
 				>
 					{t.booking.send}
 				</button>

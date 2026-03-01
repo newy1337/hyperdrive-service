@@ -5,13 +5,15 @@ type TextFieldProps = {
 	value: string
 	onChange: (v: string) => void
 	type?: string
+	onBlur?: () => void
 }
 
-export default function TextField({ placeholder, value, onChange, type = 'text' }: TextFieldProps) {
+export default function TextField({ placeholder, value, onChange, type = 'text', onBlur }: TextFieldProps) {
 	return (
 		<input
 			type={type}
 			value={value}
+			onBlur={onBlur}
 			onChange={e => onChange(e.target.value)}
 			placeholder={placeholder}
 			className={cn(
