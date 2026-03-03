@@ -5,9 +5,9 @@ import uk from './uk'
 
 export const locales = {
 	EN: en,
+	PT: pt,
 	UK: uk,
-	RU: ru,
-	PT: pt
+	RU: ru
 }
 
 export type LocaleKey = keyof typeof locales

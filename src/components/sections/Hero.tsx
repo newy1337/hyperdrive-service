@@ -1,5 +1,7 @@
 import { Phone } from 'lucide-react'
 
+import { renderTokens } from '@/lib/renderTokens'
+
 import Container from '@/components/layout/Container'
 
 import { useI18n } from '@/i18n/I18nContext'
@@ -44,7 +46,7 @@ export default function Hero() {
 					<div className='from-primary mb-6 h-px max-w-full bg-linear-90 to-transparent' />
 
 					<div className='font-heading text-primary text-[20px] leading-6 uppercase lg:text-[32px] lg:leading-6'>
-						{t.hero.priceFrom}
+						{renderTokens(t.hero.priceFrom)}
 					</div>
 
 					<div className='mt-6 grid gap-5 font-bold lg:grid-cols-2'>

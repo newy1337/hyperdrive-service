@@ -1,3 +1,5 @@
+import { renderTokens } from '@/lib/renderTokens'
+
 import BrakeIcon from '@/assets/images/services/brake.svg'
 import CarIcon from '@/assets/images/services/car.svg'
 import GearIcon from '@/assets/images/services/gear.svg'
@@ -23,7 +25,7 @@ export default function PopularServices() {
 	const items: ServiceItem[] = [
 		{
 			icon: PcIcon,
-			price: '70€',
+			price: t.services.list.diagnostics.price,
 			title: t.services.list.diagnostics.title,
 			bullets: t.services.list.diagnostics.bullets
 		},
@@ -67,7 +69,7 @@ export default function PopularServices() {
 								<div className='flex size-13.5 items-center justify-center bg-[#292512]'>
 									<img src={item.icon} alt={item.title} className='size-7.5' />
 								</div>
-								<p className='font-heading text-primary text-[28px] leading-5 uppercase'>{item.price}</p>
+								<p className='font-heading text-primary text-[28px] leading-5 uppercase'>{renderTokens(item.price)}</p>
 							</div>
 
 							<div className='font-heading mb-4.5 leading-5 uppercase'>{item.title}</div>

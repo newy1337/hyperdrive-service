@@ -5,7 +5,7 @@ export default {
 		subtitle: 'From daily cars to high-performance builds in Portugal',
 		description: 'Transparent pricing • Same approach for every client',
 		services: ['Diagnostics', 'Maintenance', 'Suspension', 'Brake Service'],
-		priceFrom: 'FROM 50€',
+		priceFrom: 'FROM 50{euro}',
 		book: 'Book Appointment',
 		whatsapp: 'WhatsApp booking'
 	},
@@ -41,12 +41,12 @@ export default {
 		},
 		list: {
 			diagnostics: {
-				price: '70€',
+				price: '70{euro}',
 				title: 'Computer Diagnostics',
 				bullets: ['Full electronic scan', 'Error reading & explanation', 'Service reset']
 			},
 			maintenance: {
-				price: 'FROM 50€',
+				price: 'FROM 50{euro}',
 				title: 'Maintenance Service',
 				bullets: [
 					'Oil + filter replacement — 50€',
@@ -55,17 +55,17 @@ export default {
 				]
 			},
 			brake: {
-				price: 'FROM 70€',
+				price: 'FROM 70{euro}',
 				title: 'Brake System',
 				bullets: ['Brake fluid replacement — 70€', 'Pads & discs replacement — 140–250€']
 			},
 			suspension: {
-				price: 'FROM 70€',
+				price: 'FROM 70{euro}',
 				title: 'Suspension',
 				bullets: ['Suspension diagnostics — 70€', 'Repair & parts replacement']
 			},
 			custom: {
-				price: '50€/HOUR',
+				price: '50{euro}/HOUR',
 				title: 'Custom Work',
 				bullets: ['Individual repairs', 'Special projects', 'Labour rate — 50€/hour']
 			}
@@ -80,14 +80,17 @@ export default {
 			main: 'CAR PROBLEMS',
 			accent: 'WE SOLVE'
 		},
-		items: [
-			'WARNING LIGHTS ON DASHBOARD',
-			'STRANGE NOISES WHILE DRIVING',
-			'VIBRATION OR INSTABILITY',
-			'BRAKE PROBLEMS',
-			'REGULAR MAINTENANCE',
-			'PRE-INSPECTION CHECK'
-		]
+		items: {
+			warningLights: 'WARNING LIGHTS ON DASHBOARD',
+			strangeNoises: 'STRANGE NOISES WHILE DRIVING',
+			vibration: 'VIBRATION OR INSTABILITY',
+			brake: 'BRAKE PROBLEMS',
+			maintenance: 'REGULAR MAINTENANCE',
+			preInspection: 'PRE-INSPECTION CHECK',
+			ecuTuning: 'ENGINE ECU TUNING',
+			ecoRemoval: 'ECO SYSTEM REMOVAL',
+			coding: 'VEHICLE CODING & FEATURE UNLOCK'
+		}
 	},
 	howItWorks: {
 		title: {
@@ -167,7 +170,7 @@ export default {
 		whatsapp: 'CHAT ON WHATSAPP'
 	},
 	footer: {
-		tagline: 'Professional Car Service in Portugal'
+		tagline: 'Professional Car Service in Portugal since 2025'
 	},
 	booking: {
 		title: 'Enter your details',
