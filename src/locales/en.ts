@@ -129,20 +129,18 @@ export default {
 	ourService: {
 		title: {
 			main: 'OUR',
-			accent: 'SERVICE'
+			accent: 'PROMO'
 		},
 		slides: {
 			workshop: {
-				title: 'HYPER DRIVE WORKSHOP',
-				subtitle: 'Modern equipment • Professional team'
+				title: 'OIL + FILTER CHANGE — 50.00{euro}',
+				subtitle: 'Free car diagnostics included',
+				book: 'Book Appointment'
 			},
 			diagnostics: {
-				title: 'DIAGNOSTICS ZONE',
-				subtitle: 'Accurate checks • Fast results'
-			},
-			repair: {
-				title: 'REPAIR & MAINTENANCE',
-				subtitle: 'Quality parts • Trusted work'
+				title: 'SPECIAL OFFER FOR LADIES',
+				subtitle: 'Car diagnostics — 58.00€ (instead of 70.00€) • 8% discount on next service • 4.03 – 11.03',
+				book: 'Book Appointment'
 			}
 		}
 	},

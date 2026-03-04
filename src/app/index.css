@@ -24,6 +24,18 @@
 	--font-body: 'Inter', sans-serif;
 }
 
+:root {
+	--font-heading: 'RaceSport', sans-serif;
+}
+
+html[lang='ru'] {
+	--font-heading: 'Russo One', sans-serif;
+}
+
+html[lang='uk'] {
+	--font-heading: 'Russo One', sans-serif;
+}
+
 html,
 body {
 	height: 100%;
@@ -99,5 +111,4 @@ body {
 .euro {
 	font-family: 'Inter', sans-serif;
 	font-weight: 700;
-	font-style: italic;
 }

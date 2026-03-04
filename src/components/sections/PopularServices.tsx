@@ -102,7 +102,7 @@ export default function PopularServices() {
 					<button
 						onClick={openBooking}
 						type='button'
-						className='bg-primary flex min-h-14.5 min-w-93 cursor-pointer items-center justify-center gap-2.5 p-3 font-bold text-black uppercase duration-300 hover:shadow-[0_4px_20.7px_0px_#F6D413F7]'
+						className='bg-primary flex min-h-14.5 w-full max-w-93 cursor-pointer items-center justify-center gap-2.5 p-3 font-bold text-black uppercase duration-300 hover:shadow-[0_4px_20.7px_0px_#F6D413F7]'
 					>
 						{t.services.cta.button}
 					</button>
