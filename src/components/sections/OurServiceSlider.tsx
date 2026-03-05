@@ -72,16 +72,16 @@ export default function OurServiceSlider() {
 							<SwiperSlide key={s.image}>
 								<div className='relative aspect-16/10 lg:aspect-16/8'>
 									<img src={s.image} alt={s.title} className='h-full w-full object-cover object-right' />
-									<div className='absolute inset-x-0 bottom-0 h-full bg-linear-to-t from-black/70 to-transparent' />
+									<div className='absolute inset-x-0 bottom-0 h-full bg-linear-to-t from-black to-transparent' />
 									<div className='absolute inset-x-3 bottom-3 lg:inset-x-8 lg:bottom-12'>
 										<p className='font-heading text-primary text-base uppercase lg:text-xl lg:leading-4'>
 											{renderTokens(s.title)}
 										</p>
-										<p className='text-secondary text-sm lg:mt-1 lg:text-base'>{s.subtitle}</p>
+										<p className='text-sm lg:mt-1 lg:text-base'>{s.subtitle}</p>
 										<button
 											onClick={openBooking}
 											type='button'
-											className='bg-primary mt-3 flex min-h-14.5 w-full max-w-93 cursor-pointer items-center justify-center gap-2.5 p-3 font-bold text-black uppercase duration-300 hover:shadow-[0_4px_20.7px_0px_#F6D413F7] lg:mt-5'
+											className='bg-primary mt-3 flex min-h-8 w-full max-w-93 cursor-pointer items-center justify-center gap-2.5 p-2 font-bold text-black uppercase duration-300 hover:shadow-[0_4px_20.7px_0px_#F6D413F7] max-lg:text-base lg:mt-5 lg:min-h-14.5 lg:p-3'
 										>
 											{s.book}
 										</button>
