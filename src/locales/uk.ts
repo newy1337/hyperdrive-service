@@ -188,6 +188,11 @@ export default {
 			custom: 'Індивідуальні роботи'
 		},
 
+		sending: 'Відправка...',
+		successTitle: 'Дякуємо!',
+		successText: "Ми отримали ваш запит. Наш менеджер зв'яжеться з вами найближчим часом.",
+		successButton: 'OK',
+
 		errors: {
 			nameRequired: "Ім'я обов'язкове",
 			surnameRequired: "Прізвище обов'язкове",

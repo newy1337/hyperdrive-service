@@ -187,6 +187,11 @@ export default {
 			custom: 'Custom Work'
 		},
 
+		sending: 'Sending...',
+		successTitle: 'Thank you!',
+		successText: 'We received your request. Our manager will contact you soon.',
+		successButton: 'OK',
+
 		errors: {
 			nameRequired: 'Name is required',
 			surnameRequired: 'Surname is required',
