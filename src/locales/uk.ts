@@ -152,7 +152,7 @@ export default {
 		},
 		address: {
 			label: 'АДРЕСА',
-			value: 'Лісабон, Португалія'
+			value: 'Av. Dr. Francisco Sá Carneiro, Massamá, 2735-600 Queluz'
 		},
 		parking: {
 			label: 'ПАРКУВАННЯ',
@@ -160,11 +160,11 @@ export default {
 		},
 		workingHours: {
 			label: 'РОБОЧІ ГОДИНИ',
-			value: 'Пн-Пт: 9:00 - 18:00   Сб: 9:00 - 14:00   Нд: Закрито'
+			value: 'Пн-Пт: 10:00 - 19:00'
 		},
 		phone: {
 			label: 'ТЕЛЕФОН',
-			value: '+351 000 000 000'
+			value: '+351 938 826 858'
 		},
 		whatsapp: 'ЧАТ У WHATSAPP'
 	},

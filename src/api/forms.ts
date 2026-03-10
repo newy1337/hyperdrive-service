@@ -7,12 +7,12 @@ export type SubmitServiceFormPayload = {
 }
 
 export async function submitServiceForm(payload: SubmitServiceFormPayload) {
-	const response = await fetch(`https://api.hyperdrive.services/api/forms/service/submit`, {
+	const response = await fetch(`https://api.hyperdrive.services/forms/service/submit`, {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json'
 		},
-		body: JSON.stringify(payload)
+		body: JSON.stringify({data: payload})
 	})
 
 	const data = await response.json().catch(() => null)
