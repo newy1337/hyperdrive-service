@@ -1,4 +1,7 @@
-import { useMemo, useState } from 'react'
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
+
+import { useEffect, useMemo, useState } from 'react'
 
 import Modal from '@/components/ui/Modal'
 import TextField from '@/components/ui/TextField'
@@ -30,6 +33,19 @@ export default function BookingModal({ open, onClose }: Props) {
 	const [submitError, setSubmitError] = useState('')
 
 	const [success, setSuccess] = useState(false)
+
+	const [country, setCountry] = useState('pt')
+
+	useEffect(() => {
+		fetch('https://ipapi.co/json/')
+			.then(res => res.json())
+			.then(data => {
+				if (data?.country_code) {
+					setCountry(data.country_code.toLowerCase())
+				}
+			})
+			.catch(() => {})
+	}, [])
 
 	const clearForm = () => {
 		setName('')
@@ -220,11 +236,19 @@ export default function BookingModal({ open, onClose }: Props) {
 						</div>
 
 						<div>
-							<TextField
-								placeholder={t.booking.phone}
+							<PhoneInput
+								country={country}
 								value={phone}
-								onChange={updateField('phone', setPhone)}
-								onBlur={() => setTouched(v => ({ ...v, phone: true }))}
+								onChange={value => updateField('phone', setPhone)(value)}
+								inputProps={{
+									name: 'phone',
+									required: true,
+									onBlur: () => setTouched(v => ({ ...v, phone: true }))
+								}}
+								inputClass='!w-full !h-[48px] !bg-transparent !text-white !rounded-none !border-border'
+								buttonClass='!border-none !bg-transparent !w-[56px]'
+								containerClass='!w-full'
+								dropdownClass='!bg-[#121212] lg:min-w-[498px]! !rounded-none'
 							/>
 							{showError('phone') && <p className='mt-1 text-sm text-red-500'>{errors.phone}</p>}
 						</div>
