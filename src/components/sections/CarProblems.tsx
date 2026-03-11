@@ -52,8 +52,8 @@ export default function CarProblems() {
 						<div key={i} className='border-border relative block overflow-hidden border bg-black'>
 							<img src={item.image} alt={t.carProblems.items[item.key]} className='aspect-16/8 w-full object-cover' />
 							<div className='absolute inset-x-0 bottom-0 h-full bg-linear-to-t from-black/75 to-transparent' />
-							<div className='absolute inset-x-0 bottom-0 px-2 pt-2 pb-5'>
-								<p className='font-heading text-center text-base leading-4 uppercase'>
+							<div className='absolute inset-x-0 bottom-0 px-2 pt-2 pb-2 lg:pb-5'>
+								<p className='font-heading text-center text-sm leading-4 uppercase lg:text-base lg:leading-4'>
 									{t.carProblems.items[item.key]}
 								</p>
 							</div>
