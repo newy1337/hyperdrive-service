@@ -15,7 +15,7 @@ export default function Header() {
 				<img src={`/logo-${lang === 'PT' ? 'pt' : 'en'}.webp`} alt='Hyper Drive Logo' className='max-w-30' />
 
 				<div className='flex items-center gap-3 lg:gap-4'>
-					<a href='tel:+351000000000' className='inline-flex items-center justify-center p-0.5'>
+					<a href='tel:+351938826858' className='inline-flex items-center justify-center p-0.5'>
 						<Phone className='text-secondary size-5' />
 					</a>
 					<a
