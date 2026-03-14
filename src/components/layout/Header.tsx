@@ -19,7 +19,7 @@ export default function Header() {
 						<Phone className='text-secondary size-5' />
 					</a>
 					<a
-						href='#'
+						href='https://wa.me/351910707251'
 						className='bg-primary flex h-8 items-center gap-2.5 px-2 py-2 text-base font-semibold text-black uppercase duration-300 hover:shadow-[0_4px_5.3px_0px_#F6D4133D] lg:h-9 lg:px-5'
 					>
 						<IconWhatsApp />
