@@ -1,18 +1,19 @@
-import { BadgeDollarSign, CircleCheck, Cpu, Search, Settings, ShieldCheck } from 'lucide-react'
+import { CircleCheck, Cpu, Search, Settings, ShieldCheck } from 'lucide-react'
 
 import { useMemo } from 'react'
 
 import { useI18n } from '@/i18n/I18nContext'
 
+import IconNimbusMoney from '../icons/NimbusMoney'
 import Container from '../layout/Container'
 import Section from '../layout/Section'
 
 type Step = {
 	lines: string[]
-	Icon: React.ComponentType<{ className?: string }>
+	Icon: React.ComponentType<{ className?: string }> | string
 }
 
-const stepIcons = [Search, Cpu, BadgeDollarSign, Settings, CircleCheck, ShieldCheck] as const
+const stepIcons = [Search, Cpu, IconNimbusMoney, Settings, CircleCheck, ShieldCheck] as const
 
 function StepCard({ step, index, isLast }: { step: Step; index: number; isLast: boolean }) {
 	const n = String(index + 1).padStart(2, '0')

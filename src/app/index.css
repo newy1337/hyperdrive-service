@@ -113,3 +113,37 @@ body {
 	font-family: 'Inter', sans-serif;
 	font-weight: 700;
 }
+
+.react-tel-input .flag-dropdown.open .selected-flag {
+	background: transparent;
+}
+
+.react-tel-input .form-control {
+	@apply text-base;
+}
+
+.react-tel-input .selected-flag:hover,
+.react-tel-input .selected-flag:focus {
+	background: transparent;
+}
+
+.react-tel-input .country-list {
+	@apply border border-white/20;
+}
+
+.react-tel-input .country-list .country {
+	padding: 12px 20px;
+}
+
+.react-tel-input .selected-flag {
+	@apply pl-5;
+}
+
+.react-tel-input .form-control {
+	@apply pl-15;
+}
+
+.react-tel-input .country-list .country.highlight,
+.react-tel-input .country-list .country:hover {
+	@apply bg-primary/5;
+}

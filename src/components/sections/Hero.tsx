@@ -59,7 +59,7 @@ export default function Hero() {
 							{t.hero.book}
 						</button>
 						<a
-							href='#'
+							href='https://wa.me/351910707251'
 							className='border-primary text-primary hover:bg-primary flex min-h-14.5 items-center justify-center gap-2.5 border p-3 uppercase duration-300 hover:text-black hover:shadow-[0_4px_20.7px_0px_#F6D413F7]'
 						>
 							<IconWhatsApp className='size-5' />

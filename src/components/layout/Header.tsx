@@ -15,11 +15,11 @@ export default function Header() {
 				<img src={`/logo-${lang === 'PT' ? 'pt' : 'en'}.webp`} alt='Hyper Drive Logo' className='max-w-30' />
 
 				<div className='flex items-center gap-3 lg:gap-4'>
-					<a href='tel:+351000000000' className='inline-flex items-center justify-center p-0.5'>
+					<a href='tel:+351938826858' className='inline-flex items-center justify-center p-0.5'>
 						<Phone className='text-secondary size-5' />
 					</a>
 					<a
-						href='#'
+						href='https://wa.me/351910707251'
 						className='bg-primary flex h-8 items-center gap-2.5 px-2 py-2 text-base font-semibold text-black uppercase duration-300 hover:shadow-[0_4px_5.3px_0px_#F6D4133D] lg:h-9 lg:px-5'
 					>
 						<IconWhatsApp />

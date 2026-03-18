@@ -29,10 +29,11 @@ export default function LocationContact() {
 					{t.locationContact.title.main} <span className='text-primary'>{t.locationContact.title.accent}</span>
 				</h2>
 
+
 				<div className='grid gap-8 lg:grid-cols-2 lg:gap-9'>
 					<div className='max-lg:h-92'>
 						<iframe
-							src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49789.692044485724!2d-9.200935220440984!3d38.744072219618374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331a61e4f33b%3A0x400ebbde49036d0!2sLisbon%2C%20Portugal!5e0!3m2!1sen!2sua!4v1772302382083!5m2!1sen!2sua'
+							src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.267587341634!2d-9.295684611513984!3d38.757566198924756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecf006425f835%3A0x4c43564e7528372b!2sHyper%20Drive%20Sport%20Car!5e0!3m2!1sru!2snl!4v1773144195660!5m2!1sru!2snl'
 							width='593'
 							height='367'
 							className='h-full w-full'
@@ -58,7 +59,7 @@ export default function LocationContact() {
 						))}
 
 						<a
-							href='#'
+							href='https://wa.me/351910707251'
 							className='border-primary text-primary hover:bg-primary flex min-h-19 items-center justify-center gap-2.5 border p-3 font-bold duration-300 hover:text-black hover:shadow-[0_4px_20.7px_0px_#F6D413F7]'
 						>
 							<IconWhatsApp className='size-5' />
