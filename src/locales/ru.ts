@@ -2,196 +2,196 @@ export default {
 	hero: {
 		titleTop: 'HYPER',
 		titleBottom: 'DRIVE',
-		subtitle: 'From daily cars to high-performance builds in Portugal',
-		description: 'Transparent pricing • Same approach for every client',
-		services: ['Diagnostics', 'Maintenance', 'Suspension', 'Brake Service'],
-		priceFrom: 'FROM 50{euro}',
-		book: 'Book Appointment',
-		whatsapp: 'WhatsApp booking'
+		subtitle: 'От повседневных авто до высокопроизводительных проектов в Португалии',
+		description: 'Прозрачные цены • Одинаковый подход к каждому клиенту',
+		services: ['Диагностика', 'Техобслуживание', 'Подвеска', 'Тормозной сервис'],
+		priceFrom: 'ОТ 50{euro}',
+		book: 'Записаться на приём',
+		whatsapp: 'Запись в WhatsApp'
 	},
 	whyChoose: {
-		title: 'Why drivers choose ',
+		title: 'Почему водители выбирают ',
 		items: [
 			{
-				title: 'Fixed prices',
-				text: 'No hidden fees. Transparent pricing.'
+				title: 'Фиксированные цены',
+				text: 'Без скрытых платежей. Прозрачное ценообразование.'
 			},
 			{
-				title: 'Professional diagnostics',
-				text: 'Latest equipment & best practice.'
+				title: 'Профессиональная диагностика',
+				text: 'Современное оборудование и лучшие практики.'
 			},
 			{
-				title: 'Warranty on repairs',
-				text: 'Quality guaranteed work.'
+				title: 'Гарантия на ремонт',
+				text: 'Качественная работа с гарантией.'
 			},
 			{
-				title: 'Free consultation',
-				text: 'Call us anytime for advice.'
+				title: 'Бесплатная консультация',
+				text: 'Звоните в любое время — подскажем.'
 			},
 			{
-				title: 'Honest recommendations',
-				text: 'Only what your car needs.'
+				title: 'Честные рекомендации',
+				text: 'Только то, что действительно нужно вашему авто.'
 			}
 		]
 	},
 	services: {
 		title: {
-			main: 'Popular Services &',
-			accent: 'Prices'
+			main: 'Популярные услуги &',
+			accent: 'Цены'
 		},
 		list: {
 			diagnostics: {
 				price: '70{euro}',
-				title: 'Computer Diagnostics',
-				bullets: ['Full electronic scan', 'Error reading & explanation', 'Service reset']
+				title: 'Компьютерная диагностика',
+				bullets: ['Полное электронное сканирование', 'Чтение и объяснение ошибок', 'Сброс сервисных интервалов']
 			},
 			maintenance: {
-				price: 'FROM 50{euro}',
-				title: 'Maintenance Service',
+				price: 'ОТ 50{euro}',
+				title: 'Техобслуживание',
 				bullets: [
-					'Oil + filter replacement — 50€',
-					'Gearbox service — 150–250€',
-					'Filters / spark plugs / fluids — 50–200€'
+					'Замена масла и фильтра — 50€',
+					'Обслуживание коробки передач — 150–250€',
+					'Фильтры / свечи / жидкости — 50–200€'
 				]
 			},
 			brake: {
-				price: 'FROM 70{euro}',
-				title: 'Brake System',
-				bullets: ['Brake fluid replacement — 70€', 'Pads & discs replacement — 140–250€']
+				price: 'ОТ 70{euro}',
+				title: 'Тормозная система',
+				bullets: ['Замена тормозной жидкости — 70€', 'Замена колодок и дисков — 140–250€']
 			},
 			suspension: {
-				price: 'FROM 70{euro}',
-				title: 'Suspension',
-				bullets: ['Suspension diagnostics — 70€', 'Repair & parts replacement']
+				price: 'ОТ 70{euro}',
+				title: 'Подвеска',
+				bullets: ['Диагностика подвески — 70€', 'Ремонт и замена деталей']
 			},
 			custom: {
-				price: '50{euro}/HOUR',
-				title: 'Custom Work',
-				bullets: ['Individual repairs', 'Special projects', 'Labour rate — 50€/hour']
+				price: '50{euro}/ЧАС',
+				title: 'Индивидуальные работы',
+				bullets: ['Нестандартные ремонты', 'Специальные проекты', 'Стоимость работ — 50€/час']
 			}
 		},
 		cta: {
-			button: 'Book your service today',
-			note: 'Free consultation included'
+			button: 'Запишитесь на сервис сегодня',
+			note: 'Бесплатная консультация включена'
 		}
 	},
 	carProblems: {
 		title: {
-			main: 'CAR PROBLEMS',
-			accent: 'WE SOLVE'
+			main: 'ПРОБЛЕМЫ С АВТО',
+			accent: 'РЕШАЕМ'
 		},
 		items: {
-			warningLights: 'WARNING LIGHTS ON DASHBOARD',
-			strangeNoises: 'STRANGE NOISES WHILE DRIVING',
-			vibration: 'VIBRATION OR INSTABILITY',
-			brake: 'BRAKE PROBLEMS',
-			maintenance: 'REGULAR MAINTENANCE',
-			preInspection: 'PRE-INSPECTION CHECK',
-			ecuTuning: 'ENGINE ECU TUNING',
-			ecoRemoval: 'ECO SYSTEM REMOVAL',
-			coding: 'VEHICLE CODING & FEATURE UNLOCK'
+			warningLights: 'ГОРЯТ ИНДИКАТОРЫ НА ПАНЕЛИ',
+			strangeNoises: 'ПОСТОРОННИЕ ШУМЫ ПРИ ДВИЖЕНИИ',
+			vibration: 'ВИБРАЦИЯ ИЛИ НЕУСТОЙЧИВОСТЬ',
+			brake: 'ПРОБЛЕМЫ С ТОРМОЗАМИ',
+			maintenance: 'РЕГУЛЯРНОЕ ТО',
+			preInspection: 'ПРОВЕРКА ПЕРЕД ОСМОТРОМ',
+			ecuTuning: 'НАСТРОЙКА ECU ДВИГАТЕЛЯ',
+			ecoRemoval: 'УДАЛЕНИЕ ECO-СИСТЕМ',
+			coding: 'КОДИРОВАНИЕ И АКТИВАЦИЯ ФУНКЦИЙ'
 		}
 	},
 	howItWorks: {
 		title: {
-			main: 'HOW IT',
-			accent: 'WORKS'
+			main: 'КАК ЭТО',
+			accent: 'РАБОТАЕТ'
 		},
 		steps: [
-			['INSPECT', 'ION'],
-			['DIAGNOSTICS'],
-			['PRICE', 'CONFIRMATION'],
-			['REPAIR'],
-			['QUALITY', 'CHECK'],
-			['WARRANTY', 'DELIVERY']
+			['ОСМОТР', ''],
+			['ДИАГНОСТИКА'],
+			['СОГЛАСОВАНИЕ', 'ЦЕНЫ'],
+			['РЕМОНТ'],
+			['КОНТРОЛЬ', 'КАЧЕСТВА'],
+			['ГАРАНТИЯ', 'ВЫДАЧА']
 		]
 	},
 	ourTeams: {
 		title: {
-			main: 'OUR',
-			accent: 'TEAMS'
+			main: 'НАША',
+			accent: 'КОМАНДА'
 		},
 		members: {
 			james: {
 				name: 'JAMES WHITMORE',
-				role: 'Sales Manager'
+				role: 'Менеджер по продажам'
 			},
 			oliver: {
 				name: 'OLIVER BENNETT',
-				role: 'Automotive Sales Consultant'
+				role: 'Консультант по продажам автомобилей'
 			},
 			miguel: {
 				name: 'MIGUEL FERREIRA',
-				role: 'Service Manager'
+				role: 'Менеджер сервиса'
 			}
 		}
 	},
 	ourService: {
 		title: {
-			main: 'OUR',
-			accent: 'PROMO'
+			main: 'НАШИ',
+			accent: 'АКЦИИ'
 		},
 		slides: {
 			workshop: {
-				title: 'OIL + FILTER CHANGE — 50.00{euro}',
-				subtitle: 'Free car diagnostics included',
-				book: 'Book Appointment'
+				title: 'ЗАМЕНА МАСЛА И ФИЛЬТРА — 50.00{euro}',
+				subtitle: 'Бесплатная диагностика автомобиля включена',
+				book: 'Записаться на приём'
 			},
 			diagnostics: {
-				title: 'SPECIAL OFFER FOR LADIES',
-				subtitle: 'Car diagnostics — 58.00€ (instead of 70.00€) • 8% discount on next service • 4.03 – 11.03',
-				book: 'Book Appointment'
+				title: 'СПЕЦПРЕДЛОЖЕНИЕ ДЛЯ ДЕВУШЕК',
+				subtitle: 'Диагностика авто — 58.00€ (вместо 70.00€) • 8% скидка на следующее обслуживание • 4.03 – 11.03',
+				book: 'Записаться на приём'
 			}
 		}
 	},
 	locationContact: {
 		title: {
-			main: 'Location &',
-			accent: 'Contact'
+			main: 'Локация &',
+			accent: 'Контакты'
 		},
 		address: {
-			label: 'ADDRESS',
+			label: 'АДРЕС',
 			value: 'Lisbon, Portugal'
 		},
 		parking: {
-			label: 'PARKING',
-			value: 'Free parking available on site'
+			label: 'ПАРКОВКА',
+			value: 'Бесплатная парковка на территории'
 		},
 		workingHours: {
-			label: 'WORKING HOURS',
-			value: 'Mon-Fri: 9:00 - 18:00   Sat: 9:00 - 14:00   Sun: Closed'
+			label: 'ГРАФИК',
+			value: 'Пн–Пт: 9:00 - 18:00   Сб: 9:00 - 14:00   Вс: Выходной'
 		},
 		phone: {
-			label: 'PHONE',
+			label: 'ТЕЛЕФОН',
 			value: '+351 000 000 000'
 		},
-		whatsapp: 'CHAT ON WHATSAPP'
+		whatsapp: 'ЧАТ В WHATSAPP'
 	},
 	footer: {
-		tagline: 'Professional Car Service in Portugal since 2025'
+		tagline: 'Профессиональный автосервис в Португалии с 2025 года'
 	},
 	booking: {
-		title: 'Enter your details',
-		name: 'Name',
-		surname: 'Surname',
-		phone: 'Phone',
-		auto: 'Auto',
-		works: 'Type of works',
-		send: 'Send',
+		title: 'Введите ваши данные',
+		name: 'Имя',
+		surname: 'Фамилия',
+		phone: 'Телефон',
+		auto: 'Авто',
+		works: 'Вид работ',
+		send: 'Отправить',
 
 		worksOptions: {
-			diagnostics: 'Diagnostics',
-			maintenance: 'Maintenance',
-			brakes: 'Brake Service',
-			suspension: 'Suspension',
-			custom: 'Custom Work'
+			diagnostics: 'Диагностика',
+			maintenance: 'Техобслуживание',
+			brakes: 'Тормозной сервис',
+			suspension: 'Подвеска',
+			custom: 'Индивидуальные работы'
 		},
 
 		errors: {
-			nameRequired: 'Name is required',
-			surnameRequired: 'Surname is required',
-			phoneRequired: 'Phone is required',
-			phoneInvalid: 'Invalid phone number'
+			nameRequired: 'Имя обязательно',
+			surnameRequired: 'Фамилия обязательна',
+			phoneRequired: 'Телефон обязателен',
+			phoneInvalid: 'Некорректный номер телефона'
 		}
 	}
 }

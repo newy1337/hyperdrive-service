@@ -8,7 +8,10 @@ const STORAGE_KEY = 'hyper_lang'
 
 export function I18nProvider({ children }: { children: React.ReactNode }) {
 	const [lang, setLangState] = useState<LocaleKey>(() => {
-		return (localStorage.getItem(STORAGE_KEY) as LocaleKey) || 'EN'
+		const stored = localStorage.getItem(STORAGE_KEY)
+		if (stored === 'UK') return 'UA'
+		if (stored && stored in locales) return stored as LocaleKey
+		return 'EN'
 	})
 
 	const setLang = (newLang: LocaleKey) => {

@@ -2,196 +2,196 @@ export default {
 	hero: {
 		titleTop: 'HYPER',
 		titleBottom: 'DRIVE',
-		subtitle: 'From daily cars to high-performance builds in Portugal',
-		description: 'Transparent pricing • Same approach for every client',
-		services: ['Diagnostics', 'Maintenance', 'Suspension', 'Brake Service'],
-		priceFrom: 'FROM 50{euro}',
-		book: 'Book Appointment',
-		whatsapp: 'WhatsApp booking'
+		subtitle: 'De carros do dia a dia a projetos de alta performance em Portugal',
+		description: 'Preços transparentes • A mesma abordagem para cada cliente',
+		services: ['Diagnóstico', 'Manutenção', 'Suspensão', 'Serviço de travões'],
+		priceFrom: 'DESDE 50{euro}',
+		book: 'Marcar atendimento',
+		whatsapp: 'Marcação via WhatsApp'
 	},
 	whyChoose: {
-		title: 'Why drivers choose ',
+		title: 'Por que os condutores escolhem ',
 		items: [
 			{
-				title: 'Fixed prices',
-				text: 'No hidden fees. Transparent pricing.'
+				title: 'Preços fixos',
+				text: 'Sem custos escondidos. Preços transparentes.'
 			},
 			{
-				title: 'Professional diagnostics',
-				text: 'Latest equipment & best practice.'
+				title: 'Diagnóstico profissional',
+				text: 'Equipamento moderno e melhores práticas.'
 			},
 			{
-				title: 'Warranty on repairs',
-				text: 'Quality guaranteed work.'
+				title: 'Garantia nas reparações',
+				text: 'Trabalho de qualidade com garantia.'
 			},
 			{
-				title: 'Free consultation',
-				text: 'Call us anytime for advice.'
+				title: 'Consulta gratuita',
+				text: 'Ligue-nos a qualquer momento para aconselhamento.'
 			},
 			{
-				title: 'Honest recommendations',
-				text: 'Only what your car needs.'
+				title: 'Recomendações honestas',
+				text: 'Apenas o que o seu carro precisa.'
 			}
 		]
 	},
 	services: {
 		title: {
-			main: 'Popular Services &',
-			accent: 'Prices'
+			main: 'Serviços populares &',
+			accent: 'Preços'
 		},
 		list: {
 			diagnostics: {
 				price: '70{euro}',
-				title: 'Computer Diagnostics',
-				bullets: ['Full electronic scan', 'Error reading & explanation', 'Service reset']
+				title: 'Diagnóstico computadorizado',
+				bullets: ['Scan eletrónico completo', 'Leitura e explicação de erros', 'Reset de manutenção']
 			},
 			maintenance: {
-				price: 'FROM 50{euro}',
-				title: 'Maintenance Service',
+				price: 'DESDE 50{euro}',
+				title: 'Serviço de manutenção',
 				bullets: [
-					'Oil + filter replacement — 50€',
-					'Gearbox service — 150–250€',
-					'Filters / spark plugs / fluids — 50–200€'
+					'Troca de óleo + filtro — 50€',
+					'Serviço de caixa de velocidades — 150–250€',
+					'Filtros / velas / fluidos — 50–200€'
 				]
 			},
 			brake: {
-				price: 'FROM 70{euro}',
-				title: 'Brake System',
-				bullets: ['Brake fluid replacement — 70€', 'Pads & discs replacement — 140–250€']
+				price: 'DESDE 70{euro}',
+				title: 'Sistema de travões',
+				bullets: ['Troca do fluido de travões — 70€', 'Substituição de pastilhas e discos — 140–250€']
 			},
 			suspension: {
-				price: 'FROM 70{euro}',
-				title: 'Suspension',
-				bullets: ['Suspension diagnostics — 70€', 'Repair & parts replacement']
+				price: 'DESDE 70{euro}',
+				title: 'Suspensão',
+				bullets: ['Diagnóstico de suspensão — 70€', 'Reparação e substituição de peças']
 			},
 			custom: {
-				price: '50{euro}/HOUR',
-				title: 'Custom Work',
-				bullets: ['Individual repairs', 'Special projects', 'Labour rate — 50€/hour']
+				price: '50{euro}/HORA',
+				title: 'Trabalhos personalizados',
+				bullets: ['Reparações individuais', 'Projetos especiais', 'Mão de obra — 50€/hora']
 			}
 		},
 		cta: {
-			button: 'Book your service today',
-			note: 'Free consultation included'
+			button: 'Marque o seu serviço hoje',
+			note: 'Consulta gratuita incluída'
 		}
 	},
 	carProblems: {
 		title: {
-			main: 'CAR PROBLEMS',
-			accent: 'WE SOLVE'
+			main: 'PROBLEMAS DO CARRO',
+			accent: 'RESOLVEMOS'
 		},
 		items: {
-			warningLights: 'WARNING LIGHTS ON DASHBOARD',
-			strangeNoises: 'STRANGE NOISES WHILE DRIVING',
-			vibration: 'VIBRATION OR INSTABILITY',
-			brake: 'BRAKE PROBLEMS',
-			maintenance: 'REGULAR MAINTENANCE',
-			preInspection: 'PRE-INSPECTION CHECK',
-			ecuTuning: 'ENGINE ECU TUNING',
-			ecoRemoval: 'ECO SYSTEM REMOVAL',
-			coding: 'VEHICLE CODING & FEATURE UNLOCK'
+			warningLights: 'LUZES DE AVISO NO PAINEL',
+			strangeNoises: 'RUÍDOS ESTRANHOS AO CONDUZIR',
+			vibration: 'VIBRAÇÃO OU INSTABILIDADE',
+			brake: 'PROBLEMAS DE TRAVÕES',
+			maintenance: 'MANUTENÇÃO REGULAR',
+			preInspection: 'CHECK-UP PRÉ-INSPEÇÃO',
+			ecuTuning: 'AFINAÇÃO DA ECU DO MOTOR',
+			ecoRemoval: 'REMOÇÃO DO SISTEMA ECO',
+			coding: 'CODIFICAÇÃO E ATIVAÇÃO DE FUNÇÕES'
 		}
 	},
 	howItWorks: {
 		title: {
-			main: 'HOW IT',
-			accent: 'WORKS'
+			main: 'COMO',
+			accent: 'FUNCIONA'
 		},
 		steps: [
-			['INSPECT', 'ION'],
-			['DIAGNOSTICS'],
-			['PRICE', 'CONFIRMATION'],
-			['REPAIR'],
-			['QUALITY', 'CHECK'],
-			['WARRANTY', 'DELIVERY']
+			['INSPEÇÃO', ''],
+			['DIAGNÓSTICO'],
+			['CONFIRMAÇÃO', 'DE PREÇO'],
+			['REPARAÇÃO'],
+			['CONTROLO', 'DE QUALIDADE'],
+			['GARANTIA', 'E ENTREGA']
 		]
 	},
 	ourTeams: {
 		title: {
-			main: 'OUR',
-			accent: 'TEAMS'
+			main: 'A NOSSA',
+			accent: 'EQUIPA'
 		},
 		members: {
 			james: {
 				name: 'JAMES WHITMORE',
-				role: 'Sales Manager'
+				role: 'Gestor de vendas'
 			},
 			oliver: {
 				name: 'OLIVER BENNETT',
-				role: 'Automotive Sales Consultant'
+				role: 'Consultor de vendas automóvel'
 			},
 			miguel: {
 				name: 'MIGUEL FERREIRA',
-				role: 'Service Manager'
+				role: 'Gestor de serviço'
 			}
 		}
 	},
 	ourService: {
 		title: {
-			main: 'OUR',
-			accent: 'PROMO'
+			main: 'AS NOSSAS',
+			accent: 'PROMOÇÕES'
 		},
 		slides: {
 			workshop: {
-				title: 'OIL + FILTER CHANGE — 50.00{euro}',
-				subtitle: 'Free car diagnostics included',
-				book: 'Book Appointment'
+				title: 'TROCA DE ÓLEO + FILTRO — 50.00{euro}',
+				subtitle: 'Diagnóstico gratuito do carro incluído',
+				book: 'Marcar atendimento'
 			},
 			diagnostics: {
-				title: 'SPECIAL OFFER FOR LADIES',
-				subtitle: 'Car diagnostics — 58.00€ (instead of 70.00€) • 8% discount on next service • 4.03 – 11.03',
-				book: 'Book Appointment'
+				title: 'OFERTA ESPECIAL PARA SENHORAS',
+				subtitle: 'Diagnóstico do carro — 58.00€ (em vez de 70.00€) • 8% de desconto no próximo serviço • 4.03 – 11.03',
+				book: 'Marcar atendimento'
 			}
 		}
 	},
 	locationContact: {
 		title: {
-			main: 'Location &',
-			accent: 'Contact'
+			main: 'Localização &',
+			accent: 'Contacto'
 		},
 		address: {
-			label: 'ADDRESS',
+			label: 'MORADA',
 			value: 'Lisbon, Portugal'
 		},
 		parking: {
-			label: 'PARKING',
-			value: 'Free parking available on site'
+			label: 'ESTACIONAMENTO',
+			value: 'Estacionamento gratuito no local'
 		},
 		workingHours: {
-			label: 'WORKING HOURS',
-			value: 'Mon-Fri: 9:00 - 18:00   Sat: 9:00 - 14:00   Sun: Closed'
+			label: 'HORÁRIO',
+			value: 'Seg-Sex: 9:00 - 18:00   Sáb: 9:00 - 14:00   Dom: Encerrado'
 		},
 		phone: {
-			label: 'PHONE',
+			label: 'TELEFONE',
 			value: '+351 000 000 000'
 		},
-		whatsapp: 'CHAT ON WHATSAPP'
+		whatsapp: 'CHAT NO WHATSAPP'
 	},
 	footer: {
-		tagline: 'Professional Car Service in Portugal since 2025'
+		tagline: 'Serviço automóvel profissional em Portugal desde 2025'
 	},
 	booking: {
-		title: 'Enter your details',
-		name: 'Name',
-		surname: 'Surname',
-		phone: 'Phone',
-		auto: 'Auto',
-		works: 'Type of works',
-		send: 'Send',
+		title: 'Introduza os seus dados',
+		name: 'Nome',
+		surname: 'Apelido',
+		phone: 'Telefone',
+		auto: 'Carro',
+		works: 'Tipo de serviço',
+		send: 'Enviar',
 
 		worksOptions: {
-			diagnostics: 'Diagnostics',
-			maintenance: 'Maintenance',
-			brakes: 'Brake Service',
-			suspension: 'Suspension',
-			custom: 'Custom Work'
+			diagnostics: 'Diagnóstico',
+			maintenance: 'Manutenção',
+			brakes: 'Serviço de travões',
+			suspension: 'Suspensão',
+			custom: 'Trabalhos personalizados'
 		},
 
 		errors: {
-			nameRequired: 'Name is required',
-			surnameRequired: 'Surname is required',
-			phoneRequired: 'Phone is required',
-			phoneInvalid: 'Invalid phone number'
+			nameRequired: 'O nome é obrigatório',
+			surnameRequired: 'O apelido é obrigatório',
+			phoneRequired: 'O telefone é obrigatório',
+			phoneInvalid: 'Número de telefone inválido'
 		}
 	}
 }

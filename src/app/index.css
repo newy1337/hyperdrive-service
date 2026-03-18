@@ -32,7 +32,8 @@ html[lang='ru'] {
 	--font-heading: 'Russo One', sans-serif;
 }
 
-html[lang='uk'] {
+html[lang='uk'],
+html[lang='ua'] {
 	--font-heading: 'Russo One', sans-serif;
 }
 
