@@ -151,7 +151,7 @@ export default {
 		},
 		address: {
 			label: 'АДРЕС',
-			value: 'Lisbon, Portugal'
+			value: 'Av. Dr. Francisco Sá Carneiro, Massamá, 2735-600 Queluz, Portugal'
 		},
 		parking: {
 			label: 'ПАРКОВКА',
@@ -159,11 +159,11 @@ export default {
 		},
 		workingHours: {
 			label: 'ГРАФИК',
-			value: 'Пн–Пт: 9:00 - 18:00   Сб: 9:00 - 14:00   Вс: Выходной'
+			value: 'Пн–Пт: 10:00 - 19:00'
 		},
 		phone: {
 			label: 'ТЕЛЕФОН',
-			value: '+351 000 000 000'
+			value: '+351 938 826 858'
 		},
 		whatsapp: 'ЧАТ В WHATSAPP'
 	},
@@ -186,6 +186,11 @@ export default {
 			suspension: 'Подвеска',
 			custom: 'Индивидуальные работы'
 		},
+
+		sending: 'Отправка...',
+		successTitle: 'Спасибо!',
+		successText: 'Мы получили ваш запрос. Наш менеджер свяжется с вами в ближайшее время.',
+		successButton: 'OK',
 
 		errors: {
 			nameRequired: 'Имя обязательно',

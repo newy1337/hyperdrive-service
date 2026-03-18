@@ -239,7 +239,7 @@ export default function BookingModal({ open, onClose }: Props) {
 							<PhoneInput
 								country={country}
 								value={phone}
-								onChange={value => updateField('phone', setPhone)(value)}
+								onChange={(value: string) => updateField('phone', setPhone)(value)}
 								inputProps={{
 									name: 'phone',
 									required: true,
@@ -272,7 +272,7 @@ export default function BookingModal({ open, onClose }: Props) {
 							disabled={isLoading}
 							className='bg-primary flex min-h-14.5 w-full items-center justify-center p-3 font-bold text-black uppercase duration-300 not-disabled:hover:shadow-[0_4px_20.7px_0px_#F6D413F7] disabled:cursor-not-allowed disabled:opacity-60'
 						>
-							{isLoading ? 'Sending...' : t.booking.send}
+							{isLoading ? t.booking.sending : t.booking.send}
 						</button>
 					</form>
 				</>

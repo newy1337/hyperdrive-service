@@ -151,7 +151,7 @@ export default {
 		},
 		address: {
 			label: 'MORADA',
-			value: 'Lisbon, Portugal'
+			value: 'Av. Dr. Francisco Sá Carneiro, Massamá, 2735-600 Queluz, Portugal'
 		},
 		parking: {
 			label: 'ESTACIONAMENTO',
@@ -159,11 +159,11 @@ export default {
 		},
 		workingHours: {
 			label: 'HORÁRIO',
-			value: 'Seg-Sex: 9:00 - 18:00   Sáb: 9:00 - 14:00   Dom: Encerrado'
+			value: 'Seg-Sex: 10:00 - 19:00'
 		},
 		phone: {
 			label: 'TELEFONE',
-			value: '+351 000 000 000'
+			value: '+351 938 826 858'
 		},
 		whatsapp: 'CHAT NO WHATSAPP'
 	},
@@ -186,6 +186,11 @@ export default {
 			suspension: 'Suspensão',
 			custom: 'Trabalhos personalizados'
 		},
+
+		sending: 'A enviar...',
+		successTitle: 'Obrigado!',
+		successText: 'Recebemos o seu pedido. O nosso gestor entrará em contacto consigo em breve.',
+		successButton: 'OK',
 
 		errors: {
 			nameRequired: 'O nome é obrigatório',
