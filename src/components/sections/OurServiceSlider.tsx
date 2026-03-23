@@ -7,7 +7,7 @@ import { useRef } from 'react'
 import { renderTokens } from '@/lib/renderTokens'
 
 import Slide1 from '@/assets/images/services-sliders/1.webp'
-import Slide2 from '@/assets/images/services-sliders/2.png'
+//import Slide2 from '@/assets/images/services-sliders/2.png'
 import { useI18n } from '@/i18n/I18nContext'
 import { useModal } from '@/providers/ModalContext'
 
@@ -33,12 +33,12 @@ export default function OurServiceSlider() {
 			subtitle: t.ourService.slides.workshop.subtitle,
 			book: t.ourService.slides.workshop.book
 		},
-		{
-			image: Slide2,
-			title: t.ourService.slides.diagnostics.title,
-			subtitle: t.ourService.slides.diagnostics.subtitle,
-			book: t.ourService.slides.diagnostics.book
-		}
+		// {
+		// 	image: Slide2,
+		// 	title: t.ourService.slides.diagnostics.title,
+		// 	subtitle: t.ourService.slides.diagnostics.subtitle,
+		// 	book: t.ourService.slides.diagnostics.book
+		// }
 	]
 
 	return (
