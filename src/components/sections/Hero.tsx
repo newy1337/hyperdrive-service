@@ -49,14 +49,14 @@ export default function Hero() {
 						{renderTokens(t.hero.priceFrom)}
 					</div>
 
-					<div className='mt-6 grid gap-5 font-bold lg:grid-cols-2'>
+					<div className='mt-6 grid gap-5 leading-6 font-bold lg:grid-cols-2'>
 						<button
 							onClick={openBooking}
 							type='button'
 							className='bg-primary flex min-h-14.5 cursor-pointer items-center justify-center gap-2.5 p-3 text-black uppercase duration-300 hover:shadow-[0_4px_20.7px_0px_#F6D413F7]'
 						>
 							<Phone className='size-5' />
-							{t.hero.book}
+							<span className='flex-1'>{t.hero.book}</span>
 						</button>
 						<a
 							href='https://wa.me/351910707251'
