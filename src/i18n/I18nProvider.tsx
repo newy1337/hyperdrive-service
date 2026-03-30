@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react'
 
-import { type LocaleKey, localeToPath, locales, pathToLocale } from '@/locales'
+import { type LocaleKey, locales, pathToLocale } from '@/locales'
 
 import { I18nContext } from './I18nContext'
 
@@ -11,6 +11,21 @@ function getLangFromPath(pathname: string): LocaleKey | null {
 	const segment = pathname.split('/')[1]?.toLowerCase()
 	if (!segment) return null
 	return pathToLocale[segment] ?? null
+}
+
+function removeLangFromPath(pathname: string): string {
+	const segments = pathname.split('/').filter(Boolean)
+
+	if (segments.length === 0) return '/'
+
+	const firstSegment = segments[0]?.toLowerCase()
+
+	if (firstSegment && pathToLocale[firstSegment]) {
+		const nextPath = '/' + segments.slice(1).join('/')
+		return nextPath === '/' ? '/' : nextPath
+	}
+
+	return pathname || '/'
 }
 
 function getInitialLang(): LocaleKey {
@@ -25,14 +40,14 @@ function getInitialLang(): LocaleKey {
 	return DEFAULT_LANG
 }
 
-function setUrlLang(lang: LocaleKey) {
+function removeLangFromUrl() {
 	if (typeof window === 'undefined') return
 
-	const targetPath = `/${localeToPath[lang]}`
 	const currentPath = window.location.pathname
+	const cleanPath = removeLangFromPath(currentPath)
 
-	if (currentPath !== targetPath) {
-		window.history.replaceState({}, '', `${targetPath}${window.location.search}${window.location.hash}`)
+	if (cleanPath !== currentPath) {
+		window.history.replaceState({}, '', `${cleanPath}${window.location.search}${window.location.hash}`)
 	}
 }
 
@@ -44,9 +59,12 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
 	}
 
 	useEffect(() => {
+		removeLangFromUrl()
+	}, [])
+
+	useEffect(() => {
 		localStorage.setItem(STORAGE_KEY, lang)
-		document.documentElement.lang = localeToPath[lang]
-		setUrlLang(lang)
+		document.documentElement.lang = lang.toLowerCase()
 	}, [lang])
 
 	const value = useMemo(
