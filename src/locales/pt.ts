@@ -5,7 +5,7 @@ export default {
 		subtitle: 'De carros do dia a dia a projetos de alta performance em Portugal',
 		description: 'Preços transparentes • A mesma abordagem para cada cliente',
 		services: ['Diagnóstico', 'Manutenção', 'Suspensão', 'Serviço de travões'],
-		priceFrom: 'DESDE 50{euro}',
+		priceFrom: 'DESDE 75{euro}',
 		book: 'Marcar atendimento',
 		whatsapp: 'Marcação via WhatsApp'
 	},
@@ -46,12 +46,12 @@ export default {
 				bullets: ['Scan eletrónico completo', 'Leitura e explicação de erros', 'Reset de manutenção']
 			},
 			maintenance: {
-				price: 'DESDE 50{euro}',
+				price: 'DESDE 75{euro}',
 				title: 'Serviço de manutenção',
 				bullets: [
-					'Troca de óleo + filtro — 50€',
+					'Troca de óleo + filtro — 75–220€',
 					'Serviço de caixa de velocidades — 150–250€',
-					'Filtros / velas / fluidos — 50–200€'
+					'Filtros / velas / fluidos — 75–200€'
 				]
 			},
 			brake: {
@@ -65,9 +65,9 @@ export default {
 				bullets: ['Diagnóstico de suspensão — 70€', 'Reparação e substituição de peças']
 			},
 			custom: {
-				price: '50{euro}/HORA',
+				price: '75{euro}/HORA',
 				title: 'Trabalhos personalizados',
-				bullets: ['Reparações individuais', 'Projetos especiais', 'Mão de obra — 50€/hora']
+				bullets: ['Reparações individuais', 'Projetos especiais', 'Mão de obra — 75€/hora']
 			}
 		},
 		cta: {
@@ -133,7 +133,7 @@ export default {
 		},
 		slides: {
 			workshop: {
-				title: 'TROCA DE ÓLEO + FILTRO — 50.00{euro}',
+				title: 'TROCA DE ÓLEO + FILTRO — DESDE 75{euro}',
 				subtitle: 'Diagnóstico gratuito do carro incluído',
 				book: 'Marcar atendimento'
 			},

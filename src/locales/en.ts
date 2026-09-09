@@ -5,7 +5,7 @@ export default {
 		subtitle: 'From daily cars to high-performance builds in Portugal',
 		description: 'Transparent pricing • Same approach for every client',
 		services: ['Diagnostics', 'Maintenance', 'Suspension', 'Brake Service'],
-		priceFrom: 'FROM 50{euro}',
+		priceFrom: 'FROM 75{euro}',
 		book: 'Book Appointment',
 		whatsapp: 'WhatsApp booking'
 	},
@@ -46,12 +46,12 @@ export default {
 				bullets: ['Full electronic scan', 'Error reading & explanation', 'Service reset']
 			},
 			maintenance: {
-				price: 'FROM 50{euro}',
+				price: 'FROM 75{euro}',
 				title: 'Maintenance Service',
 				bullets: [
-					'Oil + filter replacement — 50€',
+					'Oil + filter replacement — 75–220€',
 					'Gearbox service — 150–250€',
-					'Filters / spark plugs / fluids — 50–200€'
+					'Filters / spark plugs / fluids — 75–200€'
 				]
 			},
 			brake: {
@@ -65,9 +65,9 @@ export default {
 				bullets: ['Suspension diagnostics — 70€', 'Repair & parts replacement']
 			},
 			custom: {
-				price: '50{euro}/HOUR',
+				price: '75{euro}/HOUR',
 				title: 'Custom Work',
-				bullets: ['Individual repairs', 'Special projects', 'Labour rate — 50€/hour']
+				bullets: ['Individual repairs', 'Special projects', 'Labour rate — 75€/hour']
 			}
 		},
 		cta: {
@@ -133,7 +133,7 @@ export default {
 		},
 		slides: {
 			workshop: {
-				title: 'OIL + FILTER CHANGE — 50.00{euro}',
+				title: 'OIL + FILTER CHANGE — FROM 75{euro}',
 				subtitle: 'Free car diagnostics included',
 				book: 'Book Appointment'
 			},
